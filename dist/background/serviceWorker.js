@@ -1,0 +1,1 @@
+chrome.runtime.onInstalled.addListener(()=>{console.log("CareerFill background service worker installed")});chrome.runtime.onMessage.addListener((e,n,r)=>{console.log("Background received message",e)});

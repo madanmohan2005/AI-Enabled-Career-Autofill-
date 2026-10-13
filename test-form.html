@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acme Corp — Senior Software Engineer Application</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .form-container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .header h1 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      color: #0f172a;
+    }
+    .header p {
+      margin: 0;
+      color: #64748b;
+      font-size: 14px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #334155;
+      margin: 24px 0 12px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-row {
+      display: flex;
+      gap: 16px;
+    }
+    .form-row .form-group {
+      flex: 1;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #334155;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #0f172a;
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #3b82f6;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+    .actions {
+      margin-top: 28px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+    }
+    button.submit-btn {
+      background: #2563eb;
+      color: #ffffff;
+      padding: 10px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button.clear-btn {
+      background: #f1f5f9;
+      color: #475569;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="header">
+      <h1>Job Application: Full Stack Developer</h1>
+      <p>Acme Software Technologies Inc. • Remote / Hybrid</p>
+    </div>
+
+    <form id="career-form">
+      <div class="section-title">1. Personal Information</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="applicant_first_name">First Name</label>
+          <input type="text" id="applicant_first_name" name="first_name" placeholder="John">
+        </div>
+        <div class="form-group">
+          <label for="applicant_last_name">Last Name</label>
+          <input type="text" id="applicant_last_name" name="last_name" placeholder="Doe">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="candidate_full_name">Full Name (Legal Name)</label>
+        <input type="text" id="candidate_full_name" name="full_name" placeholder="Enter your complete legal name">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contact_email">Email Address</label>
+          <input type="email" id="contact_email" name="email_address" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="mobile_phone">Phone / Mobile</label>
+          <input type="tel" id="mobile_phone" name="phone_number" placeholder="+1 (555) 000-0000">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="residential_address">Current Residential Address</label>
+        <input type="text" id="residential_address" name="street_address" placeholder="City, State, Country">
+      </div>
+
+      <div class="section-title">2. Academic Background</div>
+      <div class="form-group">
+        <label for="academic_institution">College / University Name</label>
+        <input type="text" id="academic_institution" name="university_attended" placeholder="e.g. Stanford University">
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="degree_received">Degree</label>
+          <input type="text" id="degree_received" name="degree_title" placeholder="Bachelor of Science">
+        </div>
+        <div class="form-group">
+          <label for="major_field">Field of Study / Major</label>
+          <input type="text" id="major_field" name="field_of_study" placeholder="Computer Science">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cgpa_score">CGPA / GPA Score</label>
+          <input type="text" id="cgpa_score" name="cumulative_gpa" placeholder="3.8 / 4.0 or 9.0 / 10">
+        </div>
+        <div class="form-group">
+          <label for="grad_year">Graduation Year</label>
+          <input type="text" id="grad_year" name="completion_year" placeholder="2024">
+        </div>
+      </div>
+
+      <div class="section-title">3. Links & Portfolio</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="linkedin_link">LinkedIn Profile URL</label>
+          <input type="url" id="linkedin_link" name="linkedin_profile_url" placeholder="https://linkedin.com/in/username">
+        </div>
+        <div class="form-group">
+          <label for="github_link">GitHub Profile</label>
+          <input type="url" id="github_link" name="github_portfolio" placeholder="https://github.com/username">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="portfolio_site">Personal Website / Portfolio</label>
+        <input type="url" id="portfolio_site" name="website_url" placeholder="https://yourportfolio.dev">
+      </div>
+
+      <div class="section-title">4. Skills & Declarations</div>
+      <div class="form-group">
+        <label for="core_skills">Technical Skills</label>
+        <input type="text" id="core_skills" name="key_skills_tools" placeholder="React, Node.js, Python, SQL">
+      </div>
+
+      <div class="form-group">
+        <label for="applicant_bio">Brief Summary / About You</label>
+        <textarea id="applicant_bio" name="candidate_summary" placeholder="Briefly describe your experience and passion..."></textarea>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="work_auth_status">Work Authorization</label>
+          <select id="work_auth_status" name="authorized_to_work">
+            <option value="">Select option</option>
+            <option value="Authorized to work in US without sponsorship">Authorized to work without sponsorship</option>
+            <option value="Will require sponsorship">Will require sponsorship</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="notice_period_days">Notice Period</label>
+          <input type="text" id="notice_period_days" name="notice_period" placeholder="Immediate / 2 weeks">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="target_salary">Expected Annual Salary</label>
+        <input type="text" id="target_salary" name="expected_salary_ctc" placeholder="$100,000">
+      </div>
+
+      <div class="actions">
+        <button type="reset" class="clear-btn">Reset Form</button>
+        <button type="button" class="submit-btn" onclick="alert('Submission simulated! CareerFill filled the application.')">Submit Application</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
